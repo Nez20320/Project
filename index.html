@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+
+      <title>AGRC IMAGE VIEWER</title>
+        <!-- Add ESRI API -->
+        <link rel="stylesheet" href="http://js.arcgis.com/3.10/js/esri/css/esri.css">
+        <style>
+          html, body, #map {
+            height:100%;
+            width:80%;
+            margin:25;
+            padding:25;
+          }
+
+        </style>
+        <script src="http://js.arcgis.com/3.10/"></script>
+        <link rel='stylesheet' href='css/main.css'>
+        <script src = 'js/IdentifyTiles.js'></script>
+        <script src = 'js/main.js'></script>
+    </head>
+    <body>
+      <h1>AGRC IMAGE VIEWER</h1>
+
+      </p>
+      <div id="search"></div>
+      <div id="map"></div>
+      <p>
+
+      <p>
+        Choose an image:
+      </p>
+      <label>
+        <input type="radio" name="LAYERS GROUP" value="doq1990">
+        <span>DOQ 1990's</span>
+      </label>
+      <label>
+        <input type="radio" name="LAYERS GROUP" value="uao2003">
+        <span>UAO 2003</span>
+      </label>
+      <label>
+        <input type="radio" name="LAYERS GROUP" value="hro2009">
+        <span>HRO 2009</span>
+      </label>
+      <label>
+        <input type="radio" name="LAYERS GROUP" value="hro2012" checked>
+        <span>HRO 2012</span>
+      </label>
+      <p>
+      Click on the map to get image title download information.
+      </p>
+      <a href='' id='download-link'></a>
+    </body>
+  </html>
