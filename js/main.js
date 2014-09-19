@@ -109,7 +109,7 @@ require([
 
 
 //     HOW do I call the current layer from IdentifyTiles?? i want the featurelayer = current layer
-    var featureLayer = this.currentLayer,{
+//    var featureLayer = this.currentLayer,{
       var featureLayer = new FeatureLayer('http://mapserv.utah.gov/ArcGIS/rest/services/Raster/MapServer/27',{
           mode: FeatureLayer.MODE_ONDEMAND,
           outFields: ["*"],
